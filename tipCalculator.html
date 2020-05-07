@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="tipCalculator.css">
+</head>
+
+<body>
+    <form>
+        <h1>Tip Calculator</h1>
+        <!--  input  -->
+        <div>
+            <div>
+                <input type="text" name="name" placeholder="your name">
+                <label class="errorMsg" id="nameError"></label><br>
+            </div>
+            <div>
+                <input type="password" name="password" placeholder="password">
+                <label class="errorMsg" id="passwordError"></label><br>
+            </div>
+            <div>
+                <input type="text" name="mealCost" placeholder="Cost of the meal">
+                <label class="errorMsg" id="mealCostError"></label><br>
+            </div>
+
+        </div>
+        <!--  radio buttons for quality of service/tip  -->
+        <div>
+            <p>Quality of Service</p>
+            <div>
+                <div>
+                    <input type="radio" name="qs" value="15" checked>
+                    <label> OK (15% tip)<br></label>
+                </div>
+                <div>
+                    <input type="radio" name="qs" value="18">
+                    <label> Good (18% tip)<br></label>
+                </div>
+                <div>
+                    <input type="radio" name="qs" value="20">
+                    <label> Very Good (20% tip)<br></label>
+                </div>
+                <div>
+                    <input type="radio" name="qs" value="22">
+                    <label> Excellent (22% tip)<br></label>
+                </div>
+            </div>
+        </div>
+
+        <!--  submit  -->
+        <input type="submit" value="submit"><br><br>
+
+        <!--  results  -->
+        <div class="feedback"> 
+        </div>
+    </form>
+
+    <script src="tipCalculator.js"></script>
+
+</body>
+</html>
